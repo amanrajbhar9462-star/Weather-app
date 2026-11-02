@@ -66,7 +66,7 @@ function App() {
         pressure: data.main.pressure,
 
         windSpeed: Math.round(data.wind.speed * 3.6),
-        visibility: data.visibility / 1000,
+        // visibility: data.visibility / 1000,
 
         sunrise: formatTime(data.sys.sunrise, data.timezone),
         sunset: formatTime(data.sys.sunset, data.timezone),
@@ -196,14 +196,14 @@ function App() {
                   </div>
                 </div>
 
-                <div className="detail-box">
+                {/* <div className="detail-box"> 
                   <span>👁️</span>
 
                   <div>
                     <p>Visibility</p>
                     <h3>{weather.visibility} km</h3>
                   </div>
-                </div>
+                </div>*/}
 
                 <div className="detail-box">
                   <span>🌡️</span>
