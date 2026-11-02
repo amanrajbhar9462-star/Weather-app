@@ -1,0 +1,75 @@
+.main-weather {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 30px;
+  border: 1px solid #0874d1;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #0b3262, #061b3c);
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.current-weather {
+  padding: 12px;
+  align-self: center;
+}
+
+.current-weather h2 {
+  color: white;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.current-weather p {
+  color: #b8d1f5;
+  font-size: 15px;
+  margin: 12px 0;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.temperature span {
+  font-size: 85px;
+}
+
+.temperature h3 {
+  color: white;
+  font-size: 85px;
+}
+
+.temperature sup {
+  font-size: 32px;
+  vertical-align: top;
+}
+
+@media (max-width: 600px) {
+  .main-weather {
+    padding: 18px;
+  }
+
+  .current-weather h2 {
+    font-size: 22px;
+  }
+
+  .temperature {
+    gap: 15px;
+  }
+
+  .temperature span {
+    font-size: 60px;
+  }
+
+  .temperature h3 {
+    font-size: 60px;
+  }
+
+  .temperature sup {
+    font-size: 24px;
+  }
+}
